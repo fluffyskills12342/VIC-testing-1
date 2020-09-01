@@ -1,0 +1,95 @@
+body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background: rgb(57, 71, 150);
+        background-size: cover;
+        background-position: center;
+        font-family: sans-serif;
+    }
+      
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 0px;
+    }
+  
+    .sidenav a {
+        margin-top: 10px;
+        padding: 8px 8px 10px 10px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #555252;
+        display: block;
+        transition: 0.3s;
+    
+    }
+  
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+  
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+  
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+    .contact-title {
+        margin-top: 100px;
+        color: #fff;
+        text-transform: uppercase;
+        transition: all 4s ease-in-out;
+    }
+    .contact-title h1 {
+        font-size: 32px;
+        line-height: 10px;
+    }
+    .contact-title h2 {
+        font-size: 16px;
+    }
+    form {
+        margin-top: 50px;
+        transition: all 4s ease-in-out;
+    }
+    .form-control {
+        width: 600px;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid gray;
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+    input {
+        height: 45px;
+    }
+    form .submit {
+        background: #ff5722;
+        border-color: transparent;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        height: 50px;
+        margin-top: 20px;
+
+    }
+    form .submit:hover {
+        background-color: #f44336;
+        cursor: pointer;
+    }

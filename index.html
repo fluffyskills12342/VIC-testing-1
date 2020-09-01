@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bewerbungsformular</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">Team</a>
+      <a href="#">Bewerben</a>
+      <a href="#">Shop</a>
+    </div>
+
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span> 
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+    
+    
+    <div class="contact-title">
+      <h1>Bewerbungsformular</h1>
+      <h2>Bitte alle Felder ausfüllen!</h2>
+    </div>
+
+    <div class="contact-form">
+      <form id="contact-form" method="post" action="contact-form-handler.php">
+        <input name="name" type="text" class="form-control" placeholder="Dein Name" required>
+        <br>
+        <input name="email" type="email" class="form-control" placeholder="Deine E-Mail" required>
+        <br>
+
+        <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea><br>
+
+        <input type="submit" class="form-control submit" value="SEND MESSAGE">
+      </form>
+
+    </div>
+    
+
+
+
+  </body>
+</html>
